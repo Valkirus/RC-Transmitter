@@ -23,14 +23,13 @@ void setupNRF() {
 
     rc_data.joy1_X = 127;
     rc_data.joy1_Y = 127;
-    rc_data.joy1_Button = UNPRESSED;
-
     rc_data.joy2_X = 127;
     rc_data.joy2_Y = 127;
-    rc_data.joy2_Button = UNPRESSED;
+    rc_data.toggle1 = 0;
+    rc_data.toggle2 = 0;
+    rc_data.toggle3 = 0;
+    rc_data.toggle4 = 0;
 
-    rc_data.slider1 = 50;
-    rc_data.slider2 = 50;
 }
 
 void sendNRFData() {

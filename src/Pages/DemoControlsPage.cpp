@@ -46,9 +46,6 @@ void DemoControlsPage::loop()
   int potAValue = getPotValue(A);
   int potBValue = getPotValue(B);
 
-  rc_data.slider1 = potAValue;
-  rc_data.slider2 = potBValue;
-
   string5 = ("Pot A: " + String(potAValue));
   string10 = ("Pot B: " + String(potBValue));
 

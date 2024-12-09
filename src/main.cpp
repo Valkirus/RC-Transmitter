@@ -48,13 +48,11 @@ void loop()
   if (!drewScreen)
     rc_data.joy1_X = getJoyValue(A).x;
     rc_data.joy1_Y = getJoyValue(A).y;
-    rc_data.joy1_Button = getJoyButtonValue(A);
-
     rc_data.joy2_X = getJoyValue(B).x;
     rc_data.joy2_Y = getJoyValue(B).y;
-    rc_data.joy2_Button = getJoyButtonValue(B);
-
-    rc_data.slider1 = getPotValue(A);
-    rc_data.slider2 = getPotValue(B);
+    rc_data.toggle1 = getSwitchValue(A);
+    rc_data.toggle2 = getSwitchValue(B);
+    rc_data.toggle3 = getSwitchValue(C);
+    rc_data.toggle4 = getSwitchValue(D);
     sendNRFData();
 }
